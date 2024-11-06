@@ -1,0 +1,656 @@
+/* Reset de márgenes y paddings */
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del cuerpo */
+body {
+    /* Elimina el color de fondo para que no interfiera */
+    color: #fcf9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor Principal */
+.containerphp {
+    max-width: 1200px; /* Mantiene el ancho máximo */
+    margin: auto;
+    padding: 20px;
+}
+
+.containerphp td{
+    color: #000000;
+}
+
+.containerphp h1,h2,h3,h4,h5{
+    color: #004085;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Encabezado */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #004085;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+th {
+    font-size: 16px;
+}
+
+td {
+    font-size: 15px;
+}
+
+td a {
+    color: #004085;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #0056b3;
+}
+
+/* Botones de Acción */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #004085;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+    th, td {
+        font-size: 12px;
+    }
+}
+
+/* Estilos Generales para Formularios */
+form {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    color: #004085;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form input[type="date"],
+form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="submit"],
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004085;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #0056b3;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+a.button-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #868e96;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+a.button-back:hover {
+    background-color: #6c757d;
+}
+
+/* Tabla para Empleados Eliminados */
+.eliminados-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.eliminados-container h2 {
+    text-align: center;
+    color: #dc3545;
+    margin-bottom: 20px;
+}
+
+.eliminados-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eliminados-container thead {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.eliminados-container th, .eliminados-container td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.eliminados-container td{
+    color: #000000;
+}
+
+.eliminados-container tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.error {
+    color: red;
+    
+    margin-bottom: 15px;
+}
+
+.container-btn-file {
+    display: inline-flex;
+    align-items: center;
+    background-color: #126f26;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.container-btn-file input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.container-btn-file svg {
+    margin-right: 8px;
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.container-btn-file:hover {
+    background-color: #207426;
+}
+
+.btn-excel {
+    background-color: #28a745; /* Color verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    display: flex; /* Para alinear el icono y el texto */
+    align-items: center; /* Centrar verticalmente */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.btn-excel svg {
+    width: 20px; /* Ancho del icono */
+    height: 20px; /* Alto del icono */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.btn-excel:hover {
+    background-color: #218838; /* Color verde más oscuro al pasar el mouse */
+}
+
+.scroll {
+    overflow: auto;
+    max-height: 400px; /* Reducir un poco la altura máxima */
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px; /* Agregar espacio después del scroll */
+}
+
+.scroll h2{
+    color: black;
+}
+
+/* Estilos para los botones de acción con SVG */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 0 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-crear {
+    background-color: #28a745;
+}
+
+.btn-crear:hover {
+    background-color: #218838;
+}
+
+.btn-eliminar {
+    background-color: #dc3545;
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Ajuste para el contenedor de botones */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Nuevo estilo para el contenedor del botón de vaciar BD */
+.vaciar-bd-container {
+    text-align: center;
+    margin: 20px 0;
+    clear: both; /* Asegura que no haya elementos flotantes */
+    padding-top: 20px; /* Espacio adicional arriba del botón */
+}
+
+.acciones-masivas {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.acciones-masivas form {
+    margin: 0 10px;
+}
+
+.acciones-masivas button {
+    min-width: 200px;
+}
+
+.date-filter {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.date-filter form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.date-filter select,
+.date-filter input,
+.date-filter button {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.date-filter button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.date-filter button:hover {
+    background-color: #45a049;
+}
+
+.date-display {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.date-display h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #666;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* Estilos generales actualizados */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #004085 0%, #0056b3 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+/* Dashboard layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+}
+
+.card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dashboard-card h3 {
+    color: #004085;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.dashboard-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Botón */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #004085;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #004085;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-card {
+        margin: 0 1rem;
+    }
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #004085 0%, #0056b3 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+/* Dashboard layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+    color: #004085;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.dashboard-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Botón */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #004085;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: #004085;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-card {
+        margin: 0 1rem;
+    }
+}
